@@ -26,11 +26,12 @@ public class EmployeeController {
     @PostMapping("/chat")
     public ResponseEntity<String> chatWithModel(@RequestBody Map<String, Object> requestPayload) {
         String apiUrl = "https://models.inference.ai.azure.com/chat/completions";
+        String apiKey = System.getenv("Azure_API_KEY");
 
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.set("Authorization", "Bearer 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");
+        headers.set("Authorization", "Bearer " + apiKey);
 
         // Ensure "model" is present in the payload
         if (!requestPayload.containsKey("model")) {
