@@ -25,8 +25,8 @@ NoteFlow AI is an AI-powered TODO application designed to streamline your task m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yashkolte/mindmaple.git
-   cd mindmaple/frontend
+   git clone https://github.com/yashkolte/NoteFlowAI.git
+   cd NoteFlowAI/frontend
    ```
 
 2. Install dependencies:
@@ -62,15 +62,15 @@ NoteFlow AI is an AI-powered TODO application designed to streamline your task m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yashkolte/mindmaple.git
-   cd mindmaple/backend
+   git clone https://github.com/yashkolte/NoteFlowAI.git
+   cd NoteFlowAI/backend
    ```
 
 2. Configure the database:
-   - Create a MySQL database named `mindmaple`.
+   - Create a MySQL database named `NoteFlowAI`.
    - Update the `application.properties` file with your database credentials:
      ```properties
-     spring.datasource.url=jdbc:mysql://localhost:3306/mindmaple
+     spring.datasource.url=jdbc:mysql://localhost:3306/NoteFlowAI
      spring.datasource.username=yourusername
      spring.datasource.password=yourpassword
      ```
@@ -139,4 +139,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-Special thanks to all contributors and users who inspire us to make MindMaple better every day!
+Special thanks to all contributors and users who inspire us to make NoteFlowAI better every day!
