@@ -15,7 +15,7 @@ public class AIService {
 
     public String generateImage(String prompt) {
         String apiUrl = "/stable-diffusion-3.5-large";
-        String apiKey = "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"; // Your Hugging Face API key
+        String apiKey = System.getenv("StableDiffusionAPI"); // Your Hugging Face API key
 
         byte[] imageBytes = this.webClient.post()
                 .uri(apiUrl)
